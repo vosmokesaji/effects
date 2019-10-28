@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VosmokeSaji</title>
+	<style>
+		* {
+			margin:0;
+		}
+        .input-box{
+            display: block;
+            height: 60px;
+            width: 460px;
+            line-height: 60px;
+            padding: 0 10px;
+            margin: 100px auto;
+            border-radius: 6px;
+            border: 3px solid #345;
+            font-size: 18px;
+        }
+        .change-btn{
+            display: block;
+            height: 40px;
+            line-height: 34px;
+            padding: 0 30px;
+            margin: 100px auto;
+            border-radius: 6px;
+            border: 3px solid #345;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+        }
+        .change-btn:hover{
+            color: #fff;
+            background-color: #345;
+        }
+        .output-box{
+            display: block;
+            font-size: 66px;
+            text-align: center;
+            font-family: "DIN Alternate";
+        }
+	</style>
+</head>
+<body>
+	<input type="text" placeholder="place input your name in English!" class="input-box" id="input">
+    <!-- <button id="btn" class="change-btn">Change</button> -->
+    <div id="output" class="output-box"></div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/encryption.js"></script>
+</html>

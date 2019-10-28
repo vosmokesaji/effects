@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>licai 2018 chart</title>
+	<style>
+        body{
+            background-color: #eee;
+        }
+		* {
+			margin:0;
+		}
+        ul,li{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .qt-w{
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px 0 200px;
+        }
+        .title{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .chart-item{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .chart-item+.chart-item{
+            margin-top: 20px;
+        }
+        .chart-title{
+            display: block;
+            height: 24px;
+            line-height: 24px;
+            margin: 7px 0;
+            border-left: 4px solid #09e;
+            font-size: 16px;
+            padding-left: 10px;
+        }
+        .chart{
+            height: 200px;
+            /* background-color: #ccc; */
+            background-color: #fff;
+
+        }
+        .chart-s{
+            height: 200px;
+        }
+        .chart-m{
+            height: 300px;
+        }
+        .chart-l{
+            height: 400px;
+        }
+        .chart-xl{
+            height: 500px;
+        }
+        .chart-xxl{
+            height: 600px;
+        }
+        .chart-desc{
+            line-height: 36px;
+            margin: 7px 0;
+            border-left: 8px solid #999;
+            font-size: 16px;
+            padding-left: 10px;
+        }
+	</style>
+</head>
+<body>
+    <div class="qt-w">
+        <h1 class="title">2018理财组项目情况年度统计表</h1>
+        <ul class="chart-list">
+            <li class="chart-item">
+                <span class="chart-title" data-for="catalog">bug数量统计</span>
+                <div class="chart" id="chartBugByProTest"></div>
+                <!-- <p class="chart-desc">
+                    依据线上线下bug数区分，bug总数如下： <br>
+                    蔺智清：86 <br>
+                    王明佳：39 <br>
+                    刘海亮：27 
+                </p> -->
+            </li>
+            <li class="chart-item">
+                <span class="chart-title" data-for="catalog">需求bug数量总计</span>
+                <div class="chart" id="chartBugByXuqiuBug"></div>
+                <!-- <p class="chart-desc">
+                    依据线上线下bug数区分，bug总数如下： <br>
+                    蔺智清：86 <br>
+                    王明佳：39 <br>
+                    刘海亮：27 
+                </p> -->
+            </li>
+
+
+            <li class="chart-item">
+                <span class="chart-title" data-for="catalog">bug数量月走势</span>
+                <div class="chart chart-m" id="chartBugByMonth"></div>
+            </li>
+
+            <li class="chart-item">
+                <span class="chart-title" data-for="catalog">bug严重等级</span>
+                <div class="chart" id="chartBugByLevel"></div>
+            </li>
+
+
+        </ul>
+    </div>
+    
+</body>
+<script src="js/echarts.min.js"></script>
+<script src="js/walden.js"></script>
+<script src="js/charts-2018.js"></script>
+</html>
