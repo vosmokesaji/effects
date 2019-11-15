@@ -378,7 +378,7 @@ sphere.prototype = {
     }
 };
 /* class */
-var sphereNum = 20;  /* 球体数 */
+var sphereNum = 4;  /* 球体数 */
 var s = [];
 /*--------------------------设置---------------------------*/
 /**
@@ -533,6 +533,19 @@ var fullSet = function() {                                                      
 var textSet = [                            /* 定义字符和各项参数 */
 
 
+
+
+    // iloveniuhanhan : 6374 4123 8133 6392 4372 3343 7233
+
+    {text:"6374", sphereRadius:190 + Math.random()*30, sphereSpace:160, unitTime:100, time:3000},
+    {text:"4123", sphereRadius:190 + Math.random()*30, sphereSpace:160, unitTime:100, time:3000},
+    {text:"8133", sphereRadius:190 + Math.random()*30, sphereSpace:160, unitTime:100, time:3000},
+    {text:"6392", sphereRadius:190 + Math.random()*30, sphereSpace:160, unitTime:100, time:3000},
+    {text:"5333", sphereRadius:190 + Math.random()*30, sphereSpace:160, unitTime:100, time:3000},
+    {text:"4372", sphereRadius:190 + Math.random()*30, sphereSpace:160, unitTime:100, time:3000},
+    {text:"3343", sphereRadius:190 + Math.random()*30, sphereSpace:160, unitTime:100, time:3000},
+    {text:"7233", sphereRadius:190 + Math.random()*30, sphereSpace:160, unitTime:100, time:3000},
+
     
     // {text:"S", sphereRadius:250 + Math.random()*40, sphereSpace:90, unitTime:800, time:200},
     // {text:"S", sphereRadius:240 + Math.random()*60, sphereSpace:90, unitTime:800, time:200},
@@ -553,29 +566,44 @@ var textSet = [                            /* 定义字符和各项参数 */
 
     // 0X72 6383 2181 9282 5333 6372 7263 7331 8272 3374
 
-    {text:"@@@@", sphereRadius:130 + Math.random()*30, sphereSpace:260, unitTime:100, time:6000},
-    {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
-    {text:"0X72", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
-    {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
-    {text:"6383", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
-    {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
-    {text:"2181", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
-    {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
-    {text:"9282", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
-    {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
-    {text:"5333", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
-    {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
-    {text:"6372", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
-    {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
-    {text:"7263", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
-    {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
-    {text:"7331", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
-    {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
-    {text:"8272", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
-    {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
-    {text:"3374", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
-    {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
-    {text:"@@@@", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:5000},
+    // {text:"@@@@", sphereRadius:130 + Math.random()*30, sphereSpace:260, unitTime:100, time:6000},
+    // {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
+    // {text:"0X72", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
+    // {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
+    // {text:"6383", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
+    // {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
+    // {text:"2181", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
+    // {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
+    // {text:"9282", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
+    // {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
+    // {text:"5333", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
+    // {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
+    // {text:"6372", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
+    // {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
+    // {text:"7263", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
+    // {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
+    // {text:"7331", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
+    // {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
+    // {text:"8272", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
+    // {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
+    // {text:"3374", sphereRadius:180 + Math.random()*20, sphereSpace:180, unitTime:100, time:5000},
+    // {text:"OOOO", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
+    // {text:"@@@@", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:5000},
+
+    // {text:"@@@@", sphereRadius:130 + Math.random()*30, sphereSpace:260, unitTime:100, time:3000},
+    // {text:"0X72", sphereRadius:180 + Math.random()*20, sphereSpace:160, unitTime:100, time:3000},
+    // {text:"6383", sphereRadius:180 + Math.random()*20, sphereSpace:160, unitTime:100, time:3000},
+    // {text:"2181", sphereRadius:180 + Math.random()*20, sphereSpace:160, unitTime:100, time:3000},
+    // {text:"9282", sphereRadius:180 + Math.random()*20, sphereSpace:160, unitTime:100, time:3000},
+    // {text:"5333", sphereRadius:180 + Math.random()*20, sphereSpace:160, unitTime:100, time:3000},
+    // {text:"6372", sphereRadius:180 + Math.random()*20, sphereSpace:160, unitTime:100, time:3000},
+    // {text:"7263", sphereRadius:180 + Math.random()*20, sphereSpace:160, unitTime:100, time:3000},
+    // {text:"7331", sphereRadius:180 + Math.random()*20, sphereSpace:160, unitTime:100, time:3000},
+    // {text:"8272", sphereRadius:180 + Math.random()*20, sphereSpace:160, unitTime:100, time:3000},
+    // {text:"3374", sphereRadius:180 + Math.random()*20, sphereSpace:160, unitTime:100, time:3000},
+    // {text:"@@@@", sphereRadius:140 + Math.random()*40, sphereSpace:200, unitTime:150, time:2500},
+
+
 
     // vinsmokesanji : 2363  3353  3141  2181 5372 3371 63
 
@@ -621,12 +649,12 @@ var invertCV = new closeValue(1000, 1200);          /* 翻转CV */
 var start = function() {
     setup();
     setInterval(function() {                                            /* 这个函数是用来设置画布的 */
-        if(vibrateCV.execution() > 0.8) {                               /* execution：执行 (抖动频率) */
+        if(vibrateCV.execution() > 0.6) {                               /* execution：执行 (抖动频率，越接近1 频率越低) */
             vibrateFlag = true;
         } else {
             vibrateFlag = false;
         }
-        if(invertCV.execution() > 1) {                                /* 控制颜色的变化(底色和文字颜色的变换) 越接近1 频率越低*/
+        if(invertCV.execution() >  0) {                                /* 控制颜色的变化(底色和文字颜色的变换) 越接近1 频率越低*/
             strokeColor = "rgba(0,0,0,0.1)";
             backgroundColor = "rgba(255,255,255,1)";
         } else {
@@ -647,17 +675,18 @@ document.body.onmousemove = function(e) {                               /* 鼠�
     // camera.rotate.y = e.pageX/window.innerWidth * 180 - 90;
     // camera.rotate.x = e.pageY/window.innerHeight * 60 - 30;
     // camera.rotate.y = e.pageX/window.innerWidth * 60 - 30;
-    camera.rotate.x = e.pageY/window.innerHeight * 10 - 5;
-    camera.rotate.y = e.pageX/window.innerWidth * 10 - 5;
+    camera.rotate.x = e.pageY/window.innerHeight * 30 - 15;
+    camera.rotate.y = e.pageX/window.innerWidth * 30 - 15;
     document.onmousedown = function() {camera.zoom = Math.random() * 0.3 + 1};  /* 放大1~2倍 */
     document.onmouseup = function() {camera.zoom = 1};                  /* 恢复 */
     
     document.onkeydown = function(e) {
         console.log(e);
+        // M 键 缩小
         if(e.keyCode == 77){
             camera.zoom = - Math.random() * 0.4 + 1
         }else{
-            camera.zoom = Math.random() * 0.4 + 1
+            camera.zoom = Math.random() * 0.2 + 1
         }
     };  /* 放大1~1.6倍 */
     document.onkeyup = function(e) {
