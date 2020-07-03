@@ -26,7 +26,7 @@ chartBugByProTest.setOption({
     },
     yAxis: {
         type: 'category',
-        data: ['蔺智清','王明佳','刘海亮']
+        data: ['lzq','wmj','lhl']
     },
     series: [
         {
@@ -79,7 +79,7 @@ chartBugByXuqiuBug.setOption({
     },
     yAxis: {
         type: 'category',
-        data: ['蔺智清','王明佳','刘海亮']
+        data: ['lzq','wmj','lhl']
     },
     series: [
         {
@@ -118,7 +118,7 @@ chartBugByMonth.setOption({
         }
     },
     legend: {
-        data: ['蔺智清','王明佳','刘海亮']
+        data: ['lzq','wmj','lhl']
     },
     grid: {
         left: '3%',
@@ -136,7 +136,7 @@ chartBugByMonth.setOption({
     },
     series: [
         {
-            name: '蔺智清',
+            name: 'lzq',
             type: 'line',
             label: {
                 normal: {
@@ -147,7 +147,7 @@ chartBugByMonth.setOption({
             data: [5, 31, 8, 13, 2, 5, 8, 0, 2, 7, 4, 1]
         },
         {
-            name: '王明佳',
+            name: 'wmj',
             type: 'line',
             label: {
                 normal: {
@@ -158,7 +158,7 @@ chartBugByMonth.setOption({
             data: [0, 0, 0, 3, 0, 3, 3, 1, 2, 11, 8, 8]
         },
         {
-            name: '刘海亮',
+            name: 'lhl',
             type: 'line',
             label: {
                 normal: {
@@ -195,7 +195,7 @@ chartBugByLevel.setOption({
     },
     yAxis: {
         type: 'category',
-        data: ['蔺智清','王明佳','刘海亮']
+        data: ['lzq','王明佳','刘海亮']
     },
     series: [
         {
